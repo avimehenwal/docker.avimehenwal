@@ -6,7 +6,7 @@ code your application infrastructure
 
 ### Nodejs app
 
-* Need to have nodejs
+* [ ] Need to have nodejs, npm, yarn
 
 ---
 
