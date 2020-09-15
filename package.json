@@ -7,7 +7,8 @@
   "author": "avimehenwal <avi.mehanwal@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "reveal-md": "^4.1.4"
+    "reveal-md": "^4.1.4",
+    "reveal.js-menu": "^2.1.0"
   },
   "scripts": {
     "build": "reveal-md slides.md --static docs",
