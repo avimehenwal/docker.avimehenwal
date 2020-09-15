@@ -28,7 +28,7 @@ graph TD;
 
 ```
 
----
+----
 
 ## Flowchart
 
@@ -42,7 +42,7 @@ graph TD;
 
 ```
 
----
+----
 
 ## Sequence diagram
 
@@ -62,7 +62,7 @@ sequenceDiagram
 
 ```
 
----
+----
 
 ## Gantt diagram
 
@@ -81,7 +81,7 @@ Future task2              :         des4, after des3, 5d
 
 ```
 
----
+----
 
 ## Class diagram
 
@@ -104,7 +104,7 @@ Class08 <--> C2: Cool label
 
 ```
 
----
+----
 
 ## Git graph
 
@@ -129,7 +129,7 @@ merge newbranch
 
 ```
 
----
+----
 
 ## Entity Relationship Diagram
 
@@ -140,7 +140,7 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
----
+----
 
 ## User Journey Diagram
 

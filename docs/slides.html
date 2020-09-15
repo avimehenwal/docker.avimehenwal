@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>avimehenwal Docker</title>
     <link rel="stylesheet" href="./dist/reveal.css" />
     <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
@@ -26,8 +26,130 @@ application
 
 </script></section><section  data-markdown><script type="text/template">
 ### Reveal-md
-</script></section><section  data-markdown><script type="text/template">
-### Python App</script></section></div>
+</script></section><section ><section data-markdown><script type="text/template">
+### Python App## Simple Flowchart
+
+```mermaid
+
+graph TD;
+    A;
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Flowchart
+
+```mermaid
+
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Sequence diagram
+
+```mermaid
+
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Gantt diagram
+
+```mermaid
+
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2              :         des4, after des3, 5d
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Class diagram
+
+```mermaid
+
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Git graph
+
+```mermaid
+
+gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+
+```
+</script></section><section data-markdown><script type="text/template">
+## Entity Relationship Diagram
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+</script></section><section data-markdown><script type="text/template">
+## User Journey Diagram
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+</script></section></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
@@ -70,9 +192,11 @@ application
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
     </script>
 
+    <script src="./_assets/lib/mermaid.min.js"></script>
+    <script src="./_assets/lib/reveal-mermaid.js"></script>
 
     <script>
       Reveal.initialize(options);
