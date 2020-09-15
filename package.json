@@ -12,6 +12,7 @@
   "scripts": {
     "build": "reveal-md slides.md --static docs",
     "dev": "reveal-md slides.md --watch",
+    "start": "docker run --rm -p 1948:1948 -v slides.md:/slides webpronl/reveal-md:latest",
     "clean": "rm -rfv docs"
   }
 }
