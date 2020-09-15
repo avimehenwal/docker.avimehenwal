@@ -1,0 +1,17 @@
+{
+  "name": "docker.avimehenwal",
+  "version": "1.0.0",
+  "description": "Sample docker containers for everything",
+  "main": "index.js",
+  "repository": "git@github.com:avimehenwal/docker.avimehenwal.git",
+  "author": "avimehenwal <avi.mehanwal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "reveal-md": "^4.1.4"
+  },
+  "scripts": {
+    "build": "reveal-md slides.md --static docs",
+    "dev": "reveal-md slides.md --watch",
+    "clean": "rm -rfv docs"
+  }
+}
