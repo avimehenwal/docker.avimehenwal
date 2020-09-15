@@ -4,9 +4,14 @@ code your application infrastructure
 
 ---
 
-### Nodejs app
+How to Dockerize a
 
-* [ ] Need to have nodejs, npm, yarn
+# Nodejs
+
+application
+
+* https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+
 
 ---
 
