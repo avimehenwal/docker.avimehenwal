@@ -6,13 +6,17 @@
 
 > Everything that is old is new again
 
+.Pros
 * Multi repository documentation generator
   * collect documentation from  multiple repositories
 * Make cross-references, using relative paths as it works on localsystem as well
   * Hey, get me the file next to me
 * Built for CI, devops friendly
 * Decouple search, JAM Stack, Algolia search
+* Large scale documentation site from distributed content using s/w development processes.
+* Seperates *UI* from *Content*, so you can do A/B testing on UI themes
 
+Has a local virtual filesystem
 
 === Why Asciidoc?
 
@@ -25,3 +29,33 @@
 
 
 `[` *docs* `]` as `{` *code* `}`
+
+== Why Documentation?
+
+* Decides the quality fo your software
+
+[quote, Steve O'Grady, RedMonk]
+____
+When deciding what project to use, companies place a premium on good docs *48%* of the time
+____
+
+By 2017 survey conducted by githubm had concluded incomplete documentation is pervasive problem.
+
+[graphviz]
+....
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+  node3 [shape=record, label="{ a | b | c }"]
+
+  node1 -> node2 -> node3
+}
+....
+
+WARNING: Make sure to use ruby `asciidoctor` at this location `asciidoctor: /usr/local/bin/asciidoctor`
+
+[stem]
+++++
+sqrt(4) = 2
+++++

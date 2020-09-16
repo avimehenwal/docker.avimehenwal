@@ -15,11 +15,10 @@
     "serve": "yarn build && http-server docs",
     "dev": "reveal-md slides.md --watch",
     "start": "docker run --rm -p 1948:1948 -v slides.md:/slides webpronl/reveal-md:latest",
-    "asciidoc": "asciidoctor --backend html5 --require asciidoctor-diagram asciidoctor-kroki documentation.adoc",
+    "ascii": "asciidoctor --backend html5 -r asciidoctor-diagram --destination-dir docs book/diagrams.adoc",
     "clean": "rm -rfv docs"
   },
   "dependencies": {
-    "asciidoctor": "^2.2.0",
     "asciidoctor-kroki": "^0.9.2"
   }
 }
