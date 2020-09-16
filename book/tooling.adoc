@@ -1,0 +1,27 @@
+= Documentation Tooling
+
+== Antora
+
+* Static site generator for enterprise documentation
+
+> Everything that is old is new again
+
+* Multi repository documentation generator
+  * collect documentation from  multiple repositories
+* Make cross-references, using relative paths as it works on localsystem as well
+  * Hey, get me the file next to me
+* Built for CI, devops friendly
+* Decouple search, JAM Stack, Algolia search
+
+
+=== Why Asciidoc?
+
+* Semantically rich and lightweight
+
+|===
+| Asciidoc  | Authoring
+| Antora    | Publishing
+|===
+
+
+`[` *docs* `]` as `{` *code* `}`

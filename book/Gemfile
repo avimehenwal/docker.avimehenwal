@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'asciidoctor'
+
+# Extensions
+gem 'asciidoctor-diagram'
+gem 'asciidoctor-latex'
+# gem 'asciidoctor-screenshot'
+# Could not find gem 'asciidoctor-screenshot' in any of the gem sources listed in your Gemfile.
+# gem 'asciidoctor-extensions-lab'

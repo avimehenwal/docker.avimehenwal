@@ -165,6 +165,8 @@ Using
 ```
 sudo apt update
 sudo apt install ruby-full
+sudo snap install ruby --classic
+
 sudo gem install asciidoctor
 asciidoctor --help
 sudo gem install asciidoctor-diagram

@@ -2,3 +2,18 @@
 What is Asciidoctor?::
   An implementation of the AsciiDoc processor in Ruby.
 What is the answer to the Ultimate Question?:: 42
+
+.Google Landing page
+screenshot::http://google.com[google]
+
+[geb]
+....
+go "http://google.com"
+$("input", name: "q").value("asciidoctor")
+Tread.sleep(5000)
+....
+
+[stem]
+++++
+sqrt(4) = 2
+++++
