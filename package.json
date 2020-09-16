@@ -15,6 +15,7 @@
     "serve": "yarn build && http-server docs",
     "dev": "reveal-md slides.md --watch",
     "start": "docker run --rm -p 1948:1948 -v slides.md:/slides webpronl/reveal-md:latest",
+    "asciidoc": "asciidoctor --backend html5 --require asciidoctor-diagram asciidoctor-kroki documentation.adoc",
     "clean": "rm -rfv docs"
   }
 }

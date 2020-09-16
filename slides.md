@@ -155,3 +155,30 @@ journey
       Go downstairs: 5: Me
       Sit down: 5: Me
 ```
+
+---
+
+Using
+
+# ASCIIDOC
+
+```
+sudo apt update
+sudo apt install ruby-full
+sudo gem install asciidoctor
+asciidoctor --help
+sudo gem install asciidoctor-diagram
+```
+
+----
+
+### Diagramming
+
+* Unified diagramming API https://kroki.io/
+
+```bash
+yarn global add mermaid.cli
+```
+
+* https://github.com/asciidoctor/asciidoctor-reveal.js
+----

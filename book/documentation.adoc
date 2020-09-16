@@ -1,0 +1,343 @@
+= AsciiDoc Article Title
+Firstname Lastname <author@asciidoctor.org>
+1.0, July 29, 2014, Asciidoctor 1.5 article template
+:toc: right
+:icons: font
+:quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:experimental: true
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+include::qanda.adoc[]
+
+== First level heading
+
+This is a paragraph with a *bold* word and an _italicized_ word.
+
+.Image caption
+image::image-file-name.png[I am the image alt text.]
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+=== Second level heading
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+This is a paragraph.
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote, firstname lastname, movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse, firstname lastname, poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+NOTE: An admonition paragraph draws the reader's attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+
+== First level heading
+
+This is a link to the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+This is an attribute reference {quick-uri}[which links this text to the Asciidoctor Quick Reference Guide].
+
+== Keyboard shortcuts
+
+CAUTION: Need to set `experimental` attribute at document header
+
+|===
+|Shortcut |Purpose
+
+|kbd:[F11]
+|Toggle fullscreen
+
+|kbd:[Ctrl+T]
+|Open a new tab
+
+|kbd:[Ctrl+Shift+N]
+|New incognito window
+
+|kbd:[\ ]
+|Used to escape characters
+
+|kbd:[Ctrl+\]]
+|Jump to keyword
+
+|kbd:[Ctrl + +]
+|Increase zoom
+|===
+
+== Bibliography
+
+_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
+
+[bibliography]
+== References
+
+- [[[pp]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer:
+  From Journeyman to Master. Addison-Wesley. 1999.
+- [[[gof,2]]] Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides. Design Patterns:
+  Elements of Reusable Object-Oriented Software. Addison-Wesley. 1994.
+
+== Markdown Compatible
+
+```ruby
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+```
+
+> I hold it that a little rebellion now and then is a good thing,
+
+== Diagrams
+
+[plantuml, diagram-classes, svg]
+....
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
+https://renenyffenegger.ch/notes/tools/Graphviz/examples/index
+
+[graphviz, svg]
+....
+digraph D {
+
+  A [shape=diamond]
+  B [shape=box]
+  C [shape=circle]
+
+  A -> B [style=dashed, color=grey]
+  A -> C [color="black:invis:black"]
+  A -> D [penwidth=5, arrowhead=none]
+
+}
+....
+
+[graphviz]
+....
+digraph D {
+
+  label = "The foo, the bar and the baz";
+  labelloc = "t"; // place the label at the top (b seems to be default)
+
+  node [shape=plaintext]
+
+  FOO -> {BAR, BAZ};
+
+
+}
+....
+
+[graphviz]
+....
+digraph D {
+
+  node [shape=plaintext]
+
+  some_node [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="yellow">Foo</td></tr>
+       <tr><td bgcolor="lightblue"><font color="#0000ff">Bar</font></td></tr>
+       <tr><td bgcolor="#f0e3ff"><font color="#ff1020">Baz</font></td></tr>
+     </table>>
+  ];
+
+
+
+}
+....
+
+["mermaid", "glove mode flowchart", "svg"]
+....
+sequenceDiagram
+    Alice->John: Hello John, how are you?
+    loop Reply every minute
+        John-->Alice: Great!
+    end
+....
+
+[mermaid, svg]
+....
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+....
+
+
+== Blocks
+
+Either 4 dots `....` or 4 hyphens `----`
+
+* Attributes are variables
+
+```
+:version_num: 1.2.0
+
+Software version {version_num}
+```
+
+* Use conditional in markup
+
+```
+ifdef::foo[]
+COnditional Rendering
+endif::foo[]
+```
+:foo: true
+
+ifdef::foo[]
+COnditional Rendering
+endif::foo[]
+
+=== include Macro
+
+* Refer code snippets in documentation from source code files directly, without having to update manually on version changes
+
+++++
+[lines=12..-1, indent=0]
+// include:: {src_path_attribute}/filename.py[tags=my_method]
+++++
+
+== Source Code annotation
+
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code[]
+
+.app.rb
+[source,ruby]
+----
+require 'sinatra' // <1>
+
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
+
+> Dont write documentations, program them. Programming Documentions
+>
+> Now I code documentation
+
+Press the btn:[OK] button when you are finished.
+
+Select a file in the file navigator and click btn:[Open].
+
+[nwdiag]
+----
+nwdiag {
+  network dmz {
+      address = "210.x.x.x/24"
+
+      web01 [address = "210.x.x.1"];
+      web02 [address = "210.x.x.2"];
+  }
+  network internal {
+      address = "172.x.x.x/24";
+
+      web01 [address = "172.x.x.1"];
+      web02 [address = "172.x.x.2"];
+      db01;
+      db02;
+  }
+}
+----
+
+[rackdiag]
+----
+rackdiag {
+  // define height of rack
+  16U;
+
+  // define rack items
+  1: UPS [2U];
+  3: DB Server
+  4: Web Server
+  5: Web Server
+  6: Web Server
+  7: Load Balancer
+  8: L3 Switch
+}
+----
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ojx49J1JCdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
