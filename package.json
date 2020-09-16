@@ -7,6 +7,7 @@
   "author": "avimehenwal <avi.mehanwal@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "asciidoctor": "^2.2.0",
     "reveal-md": "^4.1.4",
     "reveal.js-menu": "^2.1.0"
   },
@@ -15,7 +16,8 @@
     "serve": "yarn build && http-server docs",
     "dev": "reveal-md slides.md --watch",
     "start": "docker run --rm -p 1948:1948 -v slides.md:/slides webpronl/reveal-md:latest",
-    "ascii": "asciidoctor --backend html5 -r asciidoctor-diagram --destination-dir docs book/diagrams.adoc",
+    "ascii": "asciidoctor --backend html5 -r asciidoctor-diagram --destination-dir dist book/diagrams.adoc",
+    "ascii2": "yarn asciidoctor --backend html5 -r asciidoctor-kroki --destination-dir dist book/diagrams.adoc",
     "clean": "rm -rfv docs"
   },
   "dependencies": {
