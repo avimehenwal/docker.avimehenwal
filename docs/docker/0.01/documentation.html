@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc Article Title :: Ultimate Docker Documentation</title>
+    <link rel="canonical" href="https://avimehenwal.github.io/docker.avimehenwal/docker/0.01/documentation.html">
+    <meta name="generator" content="Antora 2.3.4">
+<link rel="stylesheet" href="../../_/css/site.css">
+
+<link rel="stylesheet" href="../../_/css/search.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-XXXXXXXX"></script>
+  <script>function gtag() { dataLayer.push(arguments) }; window.dataLayer = window.dataLayer || []; gtag('js', new Date()); gtag('config', 'GTM-XXXXXXXX')</script>
+
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal">Ultimate Docker Documentation</a>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Components</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal/sample/0.01/chapter_1.html">Sample</a>
+            <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal/work_log/0.01/index.html">Worklog</a>
+
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="/work_log/0.01/index.html">Worklog</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/sample/0.01/chapter_1.html">Sample</a>
+            <a class="navbar-item" href="/work_log/0.01/index.html">Worklog</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="docker" data-version="0.01">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Amazing docker Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Index</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="linux-web-scraper.html">Linux-web-scraper.adoc</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="documentation.html">Documentation.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="qanda.html">Qanda.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="diagrams.html">Diagrams.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="tooling.html">Tooling.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Amazing docker Documentation</span>
+    <span class="version">0.01</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Amazing docker Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">0.01</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Amazing docker Documentation</a></li>
+    <li><a href="documentation.html">Documentation.adoc</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/avi/GIT/docker.avimehenwal/docker-documentation/modules/ROOT/pages/documentation.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">AsciiDoc Article Title</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_first_level_heading">First level heading</a>
+<ul class="sectlevel2">
+<li><a href="#_second_level_heading">Second level heading</a></li>
+</ul>
+</li>
+<li><a href="#_first_level_heading_2">First level heading</a></li>
+<li><a href="#_first_level_heading_3">First level heading</a></li>
+<li><a href="#_keyboard_shortcuts">Keyboard shortcuts</a></li>
+<li><a href="#_bibliography">Bibliography</a></li>
+<li><a href="#_references">References</a></li>
+<li><a href="#_markdown_compatible">Markdown Compatible</a></li>
+<li><a href="#_diagrams">Diagrams</a></li>
+<li><a href="#_blocks">Blocks</a>
+<ul class="sectlevel2">
+<li><a href="#_include_macro">include Macro</a></li>
+</ul>
+</li>
+<li><a href="#_source_code_annotation">Source Code annotation</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Content entered directly below the header but before the first section heading is called the preamble.</p>
+</div>
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>What is Asciidoctor?</em></p>
+<p>An implementation of the AsciiDoc processor in Ruby.</p>
+</li>
+<li>
+<p><em>What is the answer to the Ultimate Question?</em></p>
+<p>42</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Google Landing page</div>
+<p>screenshot::http://google.com[google]</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>go "http://google.com"
+$("input", name: "q").value("asciidoctor")
+Tread.sleep(5000)</pre>
+</div>
+</div>
+<div class="stemblock">
+  <div class="content halign-center valign-middle" style="padding-top: 1rem">
+<svg style="vertical-align: -0.186ex; overflow: visible" xmlns="http://www.w3.org/2000/svg" width="7.209ex" height="2.479ex" role="img" focusable="false" viewBox="0 -1013.8 3186.6 1095.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="msqrt"><g transform="translate(853, 0)"><g data-mml-node="mrow"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g><g data-mml-node="mo" transform="translate(0, 153.8)"><path data-c="221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path></g><rect width="500" height="60" x="853" y="893.8"></rect></g><g data-mml-node="mo" transform="translate(1630.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(2686.6, 0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></svg>
+  </div>
+</div>
+<div class="paragraph">
+<p><code class="red">monospace text</code></p>
+</div>
+<div class="paragraph">
+<p><span class="bgblue">Using asciidoc tables to build diagrams</span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0303%;">
+<col style="width: 3.0304%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="10"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top" colspan="10"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top" colspan="10"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">V=2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">X</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top" colspan="7"><p class="tableblock">PT</p></td>
+<td class="tableblock halign-left valign-top" colspan="16"><p class="tableblock"><span class="blue">sequence number</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RTP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="32"><p class="tableblock"><span class="bgblue">timestamp</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="32"><p class="tableblock"><span class="red">synchronization source (SSRC) identifier</span></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="title">Change color from markup file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">span.bgblue {
+    background-color: lightblue;
+    border-radius: 0.2em;
+    padding: 1px 0.5em;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_level_heading"><a class="anchor" href="#_first_level_heading"></a>First level heading</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a paragraph with a <strong>bold</strong> word and an <em>italicized</em> word.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image-file-name.png" alt="I am the image alt text.">
+</div>
+<div class="title">Figure 1. Image caption</div>
+</div>
+<div class="paragraph">
+<p>This is another paragraph.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+</div>
+<div class="sect2">
+<h3 id="_second_level_heading"><a class="anchor" href="#_second_level_heading"></a>Second level heading</h3>
+<div class="ulist">
+<div class="title">Unordered list title</div>
+<ul>
+<li>
+<p>list item 1</p>
+<div class="ulist">
+<ul>
+<li>
+<p>nested list item</p>
+<div class="ulist">
+<ul>
+<li>
+<p>nested nested list item 1</p>
+</li>
+<li>
+<p>nested nested list item 2</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>list item 2</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This is a paragraph.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Example block title</div>
+<div class="content">
+<div class="paragraph">
+<p>Content in an example block is subject to normal substitutions.</p>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Sidebar title</div>
+<div class="paragraph">
+<p>Sidebars contain aside text and are subject to normal substitutions.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_third_level_heading"><a class="anchor" href="#_third_level_heading"></a>Third level heading</h4>
+<div id="id-for-listing-block" class="listingblock">
+<div class="title">Listing block title</div>
+<div class="content">
+<pre>Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_fourth_level_heading"><a class="anchor" href="#_fourth_level_heading"></a>Fourth level heading</h5>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table title</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Column heading 1</th>
+<th class="tableblock halign-left valign-top">Column heading 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 1, row 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 2, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 1, row 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 2, row 2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect5">
+<h6 id="_fifth_level_heading"><a class="anchor" href="#_fifth_level_heading"></a>Fifth level heading</h6>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>I am a block quote or a prose excerpt.
+I am subject to normal substitutions.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; firstname lastname<br>
+<cite>movie title</cite>
+</div>
+</div>
+<div class="verseblock">
+<pre class="content">I am a verse block.
+  Indents and endlines are preserved in verse blocks.</pre>
+<div class="attribution">
+&#8212; firstname lastname<br>
+<cite>poem title and more</cite>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_level_heading_2"><a class="anchor" href="#_first_level_heading_2"></a>First level heading</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+There are five admonition labels: Tip, Note, Important, Caution and Warning.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+An admonition paragraph draws the reader&#8217;s attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are the other built-in admonition types:</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Pro tip&#8230;&#8203;
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Don&#8217;t forget&#8230;&#8203;
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Watch out for&#8230;&#8203;
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Ensure that&#8230;&#8203;
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>ordered list item</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>nested ordered list item</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>ordered list item</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The text at the end of this sentence is cross referenced to <a href="#_third_level_heading">the third level heading</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_level_heading_3"><a class="anchor" href="#_first_level_heading_3"></a>First level heading</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a link to the <a href="https://asciidoctor.org/docs/user-manual/">Asciidoctor User Manual</a>.
+This is an attribute reference <a href="https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">which links this text to the Asciidoctor Quick Reference Guide</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keyboard_shortcuts"><a class="anchor" href="#_keyboard_shortcuts"></a>Keyboard shortcuts</h2>
+<div class="sectionbody">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Need to set <code>experimental</code> attribute at document header
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F11</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle fullscreen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>T</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open a new tab</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New incognito window</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>\</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to escape characters</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>]</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jump to keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>+</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Increase zoom</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bibliography"><a class="anchor" href="#_bibliography"></a>Bibliography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>The Pragmatic Programmer</em> <a href="#pp">[pp]</a> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the &#8220;Gang of Four&#8221; <a href="#gof">[2]</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="pp"></a>[pp] Andy Hunt &amp; Dave Thomas. The Pragmatic Programmer:
+From Journeyman to Master. Addison-Wesley. 1999.</p>
+</li>
+<li>
+<p><a id="gof"></a>[2] Erich Gamma, Richard Helm, Ralph Johnson &amp; John Vlissides. Design Patterns:
+Elements of Reusable Object-Oriented Software. Addison-Wesley. 1994.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_markdown_compatible"><a class="anchor" href="#_markdown_compatible"></a>Markdown Compatible</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ruby hljs" data-lang="ruby">require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end</code></pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>I hold it that a little rebellion now and then is a good thing,</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_diagrams"><a class="anchor" href="#_diagrams"></a>Diagrams</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-c20dce7d4c86ea2d1abc0c21114c215c97f3a4fa.svg" alt="diagram-classes">
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://renenyffenegger.ch/notes/tools/Graphviz/examples/index" class="bare">https://renenyffenegger.ch/notes/tools/Graphviz/examples/index</a></p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-91f66a83445233814f1046ea188caeb48f348dcf.svg" alt="svg">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-4dce37e265119bf456f9d9b9e7c6c3bb3de96b19.svg" alt="Diagram">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-dd0f4a5129b482c040fde1eaa99dcd2d06068d53.svg" alt="Diagram">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-7cbb12e8da39467a2b655f1148c3d7e45afd10e3.svg" alt="glove mode flowchart">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-0678675d0486c6be62dfdedffbec86639187f2fa.svg" alt="svg">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_blocks"><a class="anchor" href="#_blocks"></a>Blocks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Either 4 dots <code>&#8230;&#8203;.</code> or 4 hyphens <code>----</code></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Attributes are variables</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>:version_num: 1.2.0
+
+Software version {version_num}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use conditional in markup</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>COnditional Rendering</p>
+</div>
+<div class="sect2">
+<h3 id="_include_macro"><a class="anchor" href="#_include_macro"></a>include Macro</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Refer code snippets in documentation from source code files directly, without having to update manually on version changes</p>
+</li>
+</ul>
+</div>
+[lines=12..-1, indent=0]
+// include:: {src_path_attribute}/filename.py[tags=my_method]
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_code_annotation"><a class="anchor" href="#_source_code_annotation"></a>Source Code annotation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code" class="bare">https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code</a></p>
+</div>
+<div class="listingblock">
+<div class="title">app.rb</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ruby hljs" data-lang="ruby">require 'sinatra' <i class="conum" data-value="1"></i><b>(1)</b>
+
+get '/hi' do <i class="conum" data-value="2"></i><b>(2)</b>
+  "Hello World!" <i class="conum" data-value="3"></i><b>(3)</b>
+end</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Library import</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>URL mapping</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>HTTP response body</td>
+</tr>
+</table>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Dont write documentations, program them. Programming Documentions</p>
+</div>
+<div class="paragraph">
+<p>Now I code documentation</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Press the <b class="button">OK</b> button when you are finished.</p>
+</div>
+<div class="paragraph">
+<p>Select a file in the file navigator and click <b class="button">Open</b>.</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-8a784118416a3961232688ee854582a3668df7ac.svg" alt="Diagram">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-8a729fdfda450d828a9090c06c679a0be018c276.svg" alt="Diagram">
+</div>
+</div>
+<div class="paragraph">
+<p>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ojx49J1JCdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. I am footnote text and will be displayed at the bottom of the article.
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  docker
+    0 <br>
+    Key: docker Values =
+    <ol>
+        <li> Key: name</li>
+        <ol>
+        </ol>
+        <li> Key: latest</li>
+        <ol>
+            <li> Key: displayVersion Value = 0.01 </li>
+            <li> Key: title Value = Amazing docker Documentation </li>
+            <li> Key: version Value = 0.01 </li>
+            <li> Key: name Value = docker </li>
+            <li> Key: url Value = /docker/0.01/index.html </li>
+            <li> Key: asciidoc Value = [object Object] </li>
+              <ol>
+                  <li> 0 -> [object Object]</li>
+              </ol>
+            <li> Key: navigation Value = [object Object] </li>
+        </ol>
+        <li> Key: versions</li>
+        <ol>
+            <li> Key: 0 Value = [object Object] </li>
+        </ol>
+    </ol>
+</footer>
+
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/docker/0.01/documentation.html"></script>
+<script async src="../../_/../search-index.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+
+  </body>
+</html>

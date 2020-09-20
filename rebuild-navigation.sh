@@ -9,9 +9,7 @@
 
 ROOT="./docker-documentation/modules/ROOT"
 INDEX="nav.adoc"
-
-APT_DEPENDENCIES=(bash bats make)
-SNAP_DEPENDENCIES=(docker)
+INDEX_FILE=$ROOT/$INDEX
 
 # https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9984&number=128&names=-&utf8=string-literal
 Y="\xe2\x9c\x97"
@@ -21,24 +19,17 @@ F="\xe2\x9c\x88"
 # Hierarchy is not supported in asciidoc
 # If I start writing chapters in `chapter/*.adoc` directory, it would still be located at root
 # in destination folder. Hierarchy with `chapter` is skipped
-function trim {
-  string=$1
-  prefix="./pages/"
-  suffix=".adoc"
-  foo=${string#"$prefix"}
-  foo=${foo%"$suffix"}
-  echo ${foo} | sed 's/Chapters\///g'
-}
-
-echo > ${INDEX}
-cat <<EOT > ${INDEX}
+echo > ${INDEX_FILE}
+cat <<EOT > ${INDEX_FILE}
 * xref:index.adoc[Index]
 EOT
 
-for FILE in $(find $ROOT/pages -type f -name '*.adoc' ! -name 'index.adoc')
+for FULL_NAME in $(find $ROOT/pages -type f -name '*.adoc' ! -name 'index.adoc')
   do
-    LINK=$(trim $FILE)
-    echo "* xref:${LINK}[${LINK^}]" | tee --append ${INDEX}
+    # echo -e "$FULL_NAME"
+    LINK=$(basename $FULL_NAME)
+    # echo $LINK
+    echo "* xref:${LINK}[${LINK^}]" | tee --append ${INDEX_FILE}
   done
 
 # END

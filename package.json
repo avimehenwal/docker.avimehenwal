@@ -23,6 +23,7 @@
     "asciidoctor-tweet": "^0.2.1",
     "asciidoctor.js": "^1.5.9",
     "bytefield-svg": "^1.5.0",
+    "http-server": "^0.12.3",
     "reveal-md": "^4.1.4",
     "reveal.js-menu": "^2.1.0"
   },

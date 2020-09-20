@@ -1,6 +1,0 @@
-* xref:index.adoc[Index]
-* xref:./docker-documentation/modules/ROOT/pages/linux-web-scraper[./docker-documentation/modules/ROOT/pages/linux-web-scraper]
-* xref:./docker-documentation/modules/ROOT/pages/documentation[./docker-documentation/modules/ROOT/pages/documentation]
-* xref:./docker-documentation/modules/ROOT/pages/qanda[./docker-documentation/modules/ROOT/pages/qanda]
-* xref:./docker-documentation/modules/ROOT/pages/diagrams[./docker-documentation/modules/ROOT/pages/diagrams]
-* xref:./docker-documentation/modules/ROOT/pages/tooling[./docker-documentation/modules/ROOT/pages/tooling]

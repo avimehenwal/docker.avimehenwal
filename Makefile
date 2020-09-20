@@ -1,4 +1,4 @@
-all: a clean build serve
+all: a clean nav build serve
 
 SHELL:=/bin/bash
 DIST:=docs
@@ -9,10 +9,8 @@ a:
 clean:
 	rm -r ${DIST} || true
 
-dev:
-	antora --stacktrace --to-dir ${DIST} --title development \
-	--require asciidoctor-chart antora-playbook.yml
-	make serve
+nav:
+	./rebuild-navigation.sh
 
 build:
 	DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" \
