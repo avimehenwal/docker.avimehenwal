@@ -1,3 +1,5 @@
+:stylesheet: style.css
+
 [qanda]
 What is Asciidoctor?::
   An implementation of the AsciiDoc processor in Ruby.
@@ -17,3 +19,26 @@ Tread.sleep(5000)
 ++++
 sqrt(4) = 2
 ++++
+
+[.red]`monospace text`
+
+[.bgblue]#Using asciidoc tables to build diagrams#
+
+[cols="33", halign="center"]
+|====
+10+<|0 10+<|1 10+<|2 2+<|3|
+|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
+2+|V=2 |P|X 4+|CC|M 7+|PT 16+|[.blue]#sequence number# |RTP
+32+|[.bgblue]#timestamp# |Header
+32+|[.red]#synchronization source (SSRC) identifier# |
+|====
+
+.Change color from markup file
+[source,css]
+----
+span.bgblue {
+    background-color: lightblue;
+    border-radius: 0.2em;
+    padding: 1px 0.5em;
+}
+----

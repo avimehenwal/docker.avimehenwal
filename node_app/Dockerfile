@@ -1,4 +1,3 @@
-# ARG  VERSION=latest
 ARG  VERSION=8
 FROM node:${VERSION}
 

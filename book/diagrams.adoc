@@ -5,6 +5,7 @@ Firstname Lastname <author@asciidoctor.org>
 :icons: font
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 :experimental: true
+:source-highlighter: rouge
 // :imagesoutdir: img
 
 [stem]

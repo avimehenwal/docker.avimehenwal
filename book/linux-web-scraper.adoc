@@ -1,0 +1,60 @@
+= Bash web scraper
+:stylesheet: style.css
+:author: avimehenwal
+:sectnums:
+:toc:
+:numbered:
+
+:tt-hxnormalize: pretty-print an HTML file
+:hxnormalize: link:https://www.w3.org/Tools/HTML-XML-utils/man1/hxnormalize.html[hxnormalize, title={tt-hxnormalize}]
+:tt-hxselect: extract elements or attributes that match a (CSS) selector
+:hxselect: https://www.w3.org/Tools/HTML-XML-utils/man1/hxselect.html[hxselect, title={tt-hxselect}]
+:tt-lynx: a general purpose distributed information browser for the World Wide Web
+:lynx: https://linux.die.net/man/1/lynx[lynx, title={tt-lynx}]
+
+== How to make a webscraper with bash on ubuntu
+
+.Web Scraper
+[source,bash]
+----
+URL=""http://www.bbc.com""
+SELECTOR="div.media"
+OUTPUT="allMedia"
+
+echo ${URL} \
+  | wget -O- -i- \
+  | hxnormalize -x \ <1>
+  | hxselect -i ${SELECTOR} \ <2>
+  | lynx -stdin -dump > ${OUTPUT} <3>
+
+bat --language man ${OUTPUT}
+----
+
+<1> {hxnormalize} -> {tt-hxnormalize}
+<2> {hxselect} -> {tt-hxselect} `-i`: case insensitive
+<3> {lynx} -> {tt-lynx}
+
+=== Dependencies
+
+1. html-xml-utils
+2. lynx
+3. bat
+4. libxml2-utils -> For xpath parsing support
+
+.xpath parser for bash
+[source,bash]
+----
+xmllint --html -xpath "//style" qanda.html
+----
+
+== How does it work
+
+
+== Glossary
+
+{hxnormalize}:: {tt-hxnormalize}
+
+{hxselect}:: {tt-hxselect}
+
+{lynx}:: {tt-lynx}
+
