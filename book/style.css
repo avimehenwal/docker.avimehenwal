@@ -771,6 +771,7 @@ p { margin-bottom: 1.25rem; }
   #footer-text { color: rgba(0, 0, 0, 0.6); font-size: 0.9em; } }
 @media amzn-kf8 { #header, #content, #footnotes, #footer { padding: 0; } }
 
+/* Custom Styles */
 span.bgblue {
   background-color: lightblue;
   border-radius: 0.2em;
