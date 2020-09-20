@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React App Container :: Ultimate Docker Documentation</title>
+    <link rel="canonical" href="https://avimehenwal.github.io/docker.avimehenwal/docker/0.01/react-app.html">
+    <meta name="generator" content="Antora 2.3.4">
+<link rel="stylesheet" href="../../_/css/site.css">
+
+<link rel="stylesheet" href="../../_/css/search.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-XXXXXXXX"></script>
+  <script>function gtag() { dataLayer.push(arguments) }; window.dataLayer = window.dataLayer || []; gtag('js', new Date()); gtag('config', 'GTM-XXXXXXXX')</script>
+
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal">Ultimate Docker Documentation</a>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Components</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal/sample/0.01/chapter_1.html">Sample</a>
+            <a class="navbar-item" href="https://avimehenwal.github.io/docker.avimehenwal/work_log/0.01/index.html">Worklog</a>
+
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="/work_log/0.01/index.html">Worklog</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/sample/0.01/chapter_1.html">Sample</a>
+            <a class="navbar-item" href="/work_log/0.01/index.html">Worklog</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="docker" data-version="0.01">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Amazing docker Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Index</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="linux-web-scraper.html">Linux-web-scraper.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="documentation.html">Documentation.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="qanda.html">Qanda.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="diagrams.html">Diagrams.adoc</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="react-app.html">React-app.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="tooling.html">Tooling.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Amazing docker Documentation</span>
+    <span class="version">0.01</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Amazing docker Documentation</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">0.01</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Amazing docker Documentation</a></li>
+    <li><a href="react-app.html">React-app.adoc</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/avi/GIT/docker.avimehenwal/docker-documentation/modules/ROOT/pages/react-app.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">React App Container</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_issues_challenges">Issues / Challenges</a>
+<ul class="sectlevel2">
+<li><a href="#_docker_ip">Docker IP</a></li>
+<li><a href="#_open_docker_bugsissues">Open docker bugs/issues</a></li>
+</ul>
+</li>
+<li><a href="#_observations">Observations</a></li>
+<li><a href="#_todos">ToDos</a></li>
+<li><a href="#_docker_image">Docker Image</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-9cc15a09c1c76144eb055103f0cb04bb0d30ede5.svg" alt="Docker architecture">
+</div>
+<div class="title">Figure 1. Docker architecture</div>
+</div>
+<div class="imageblock bytefield">
+<div class="content"><?xml version="1.0" encoding="UTF-8"?><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="401" height="242" viewBox="0 0 401 242" ><rect x="40" y="1" height="80" width="40" fill="#80a0ff" /><line x1="40" y1="1" x2="80" y2="1" stroke="#000000" stroke-width="1" /><line x1="40" y1="81" x2="80" y2="81" stroke="#000000" stroke-width="1" /><line x1="80" y1="1" x2="80" y2="81" stroke="#000000" stroke-width="1" /><line x1="40" y1="1" x2="40" y2="81" stroke="#000000" stroke-width="1" /><rect x="80" y="1" height="80" width="120" fill="orange" /><line x1="80" y1="1" x2="200" y2="1" stroke="#000000" stroke-width="1" /><line x1="80" y1="81" x2="200" y2="81" stroke="#000000" stroke-width="1" /><line x1="200" y1="1" x2="200" y2="81" stroke="#000000" stroke-width="1" /><line x1="80" y1="1" x2="80" y2="81" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" x="140" y="42" text-anchor="middle" dominant-baseline="middle" >Docker</text><rect x="200" y="1" height="80" width="200" fill="pink" /><line x1="200" y1="1" x2="400" y2="1" stroke="#000000" stroke-width="1" /><line x1="200" y1="81" x2="400" y2="81" stroke="#000000" stroke-width="1" /><line x1="400" y1="1" x2="400" y2="81" stroke="#000000" stroke-width="1" /><line x1="200" y1="1" x2="200" y2="81" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" x="300" y="42" text-anchor="middle" dominant-baseline="middle" >Docker</text><text font-size="11" font-family="Courier New, monospace" font-style="normal" dominant-baseline="middle" x="35" y="41" text-anchor="end" >00</text><text font-size="11" font-family="Courier New, monospace" font-style="normal" dominant-baseline="middle" x="35" y="121" text-anchor="end" >09</text><rect x="40" y="81" height="80" width="200" fill="#a0ffa0" /><line x1="40" y1="81" x2="240" y2="81" stroke="#000000" stroke-width="1" /><line x1="40" y1="161" x2="240" y2="161" stroke="#000000" stroke-width="1" /><line x1="240" y1="81" x2="240" y2="161" stroke="#000000" stroke-width="1" /><line x1="40" y1="81" x2="40" y2="161" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" x="140" y="122" text-anchor="middle" dominant-baseline="middle" >Docker</text><rect x="240" y="81" height="80" width="160" fill="#80a0ff" /><line x1="240" y1="81" x2="400" y2="81" stroke="#000000" stroke-width="1" /><line x1="240" y1="161" x2="400" y2="161" stroke="#000000" stroke-width="1" /><line x1="400" y1="81" x2="400" y2="161" stroke="#000000" stroke-width="1" /><line x1="240" y1="81" x2="240" y2="161" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" x="320" y="122" text-anchor="middle" dominant-baseline="middle" >Docker</text><text font-size="11" font-family="Courier New, monospace" font-style="normal" dominant-baseline="middle" x="35" y="201" text-anchor="end" >12</text><line x1="40" y1="161" x2="80" y2="161" stroke="#000000" stroke-width="1" /><line x1="40" y1="241" x2="80" y2="241" stroke="#000000" stroke-width="1" /><line x1="80" y1="161" x2="80" y2="241" stroke="#000000" stroke-width="1" /><line x1="40" y1="161" x2="40" y2="241" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" writing-mode="vertical-rl" x="60" y="202" text-anchor="middle" dominant-baseline="middle" >Sync</text><rect x="80" y="161" height="80" width="160" fill="#80a0ff" /><line x1="80" y1="161" x2="240" y2="161" stroke="#000000" stroke-width="1" /><line x1="80" y1="241" x2="240" y2="241" stroke="#000000" stroke-width="1" /><line x1="240" y1="161" x2="240" y2="241" stroke="#000000" stroke-width="1" /><line x1="80" y1="161" x2="80" y2="241" stroke="#000000" stroke-width="1" /><text font-size="18" font-family="Palatino, Georgia, Times New Roman, serif" x="160" y="202" text-anchor="middle" dominant-baseline="middle" >some text</text><circle cx="300" cy="55" r="50" /></svg></div>
+<div class="title">A byteframe</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issues_challenges"><a class="anchor" href="#_issues_challenges"></a>Issues / Challenges</h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Docarized app doesn work on localhost, use <a href="#_docker_ip">Docker IP</a> <code><a href="http://172.17.0.2:8080" class="bare">http://172.17.0.2:8080</a></code>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Have issues running with <code>docker-compose</code>
+<img class="emoji" draggable="false" height="24px" width="24px" src="https://twemoji.maxcdn.com/2/svg/2705.svg" /> better use <code>Makefile</code> with <code>docker</code> commands
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Setting up aws named profile on images</div>
+<ul>
+<li>
+<p>Seems like setting up environment variables alone do not work</p>
+</li>
+<li>
+<p>Had to create create credential file to work</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Unable to access the b2c webapp running inside docker container on localmachine</p>
+</div>
+<div class="paragraph">
+<p><code>docker inspect</code> and <code>docker ps</code> shows port 8080is exposed still&#8230;&#8203; doesnt work</p>
+</div>
+<div class="ulist">
+<div class="title">Tries all these URLs</div>
+<ul>
+<li>
+<p><a href="http://0.0.0.0:8080/" class="bare">http://0.0.0.0:8080/</a></p>
+</li>
+<li>
+<p><a href="http://127.0.0.1:8080/" class="bare">http://127.0.0.1:8080/</a></p>
+</li>
+<li>
+<p><a href="http://localhost:8080/" class="bare">http://localhost:8080/</a></p>
+</li>
+<li>
+<p><a href="http://172.17.0.2:8080/" class="bare">http://172.17.0.2:8080/</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_docker_ip"><a class="anchor" href="#_docker_ip"></a>Docker IP</h3>
+<div class="paragraph">
+<p><code>docker inspect --format "{{.NetworkSettings.IPAddress }}" 2ae459506f96</code></p>
+</div>
+<div class="paragraph">
+<p>ERROR: <code>curl 172.17.0.4:8080</code> fails</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>run a sample react app in container <img class="emoji" draggable="false" height="24px" width="24px" src="https://twemoji.maxcdn.com/2/svg/2705.svg" /></p>
+</li>
+<li>
+<p><code>docker run -p 80:80 nginx</code> seems to work fine <img class="emoji" draggable="false" height="24px" width="24px" src="https://twemoji.maxcdn.com/2/svg/2705.svg" /></p>
+</li>
+<li>
+<p>docker run -p 8000:8000 -it python:3.7-slim python3 -m http.server --bind 0.0.0.0 <img class="emoji" draggable="false" height="24px" width="24px" src="https://twemoji.maxcdn.com/2/svg/2705.svg" /></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_open_docker_bugsissues"><a class="anchor" href="#_open_docker_bugsissues"></a>Open docker bugs/issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/docker/for-win/issues/3214" class="bare">https://github.com/docker/for-win/issues/3214</a></p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">How I tested it?</dt>
+<dd>
+<p>Run <code>docker-compose</code> and normal <code>docker</code> commands on <code>bash</code> using <code>Makefile</code>
+Then, watch the output of <code>docker ps</code></p>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_observations"><a class="anchor" href="#_observations"></a>Observations</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Currently seems to be working with</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_todos"><a class="anchor" href="#_todos"></a>ToDos</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Add and install yarn dependencies in container before run</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_docker_image"><a class="anchor" href="#_docker_image"></a>Docker Image</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  docker
+    0 <br>
+    Key: docker Values =
+    <ol>
+        <li> Key: name</li>
+        <ol>
+        </ol>
+        <li> Key: latest</li>
+        <ol>
+            <li> Key: displayVersion Value = 0.01 </li>
+            <li> Key: title Value = Amazing docker Documentation </li>
+            <li> Key: version Value = 0.01 </li>
+            <li> Key: name Value = docker </li>
+            <li> Key: url Value = /docker/0.01/index.html </li>
+            <li> Key: asciidoc Value = [object Object] </li>
+              <ol>
+                  <li> 0 -> [object Object]</li>
+              </ol>
+            <li> Key: navigation Value = [object Object] </li>
+        </ol>
+        <li> Key: versions</li>
+        <ol>
+            <li> Key: 0 Value = [object Object] </li>
+        </ol>
+    </ol>
+</footer>
+
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/docker/0.01/react-app.html"></script>
+<script async src="../../_/../search-index.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+
+  </body>
+</html>

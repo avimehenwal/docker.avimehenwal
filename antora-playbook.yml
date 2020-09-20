@@ -19,6 +19,8 @@ content:
 asciidoc:
   attributes:
     icons: font
+    author: avimehenwal
+    toc: auto
     kroki-fetch-diagram: true
     # plantuml-server-url: 'http://www.plantuml.com/plantuml'
     experimental: ''

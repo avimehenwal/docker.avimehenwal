@@ -1,4 +1,4 @@
-ARG  VERSION=8
+ARG  VERSION=12
 FROM node:${VERSION}
 
 ARG NAME=version.txt

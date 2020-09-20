@@ -1,0 +1,87 @@
+= React App Container
+
+.Docker architecture
+[blockdiag]
+----
+blockdiag {
+  blockdiag -> generates -> "block-diagrams";
+  blockdiag -> is -> "very easy!";
+
+  blockdiag [color = "greenyellow"];
+  "block-diagrams" [color = "pink"];
+  "very easy!" [color = "orange"];
+}
+----
+
+.A byteframe
+[bytefield]
+----
+(def row-height 80)
+(defattrs :bg-blue  {:fill "#80a0ff"})
+(defattrs :bg-green {:fill "#a0ffa0"})
+(defattrs :vertical [:plain {:writing-mode "vertical-rl"}])
+(defattrs :4 {:span 4})
+(def boxes-per-row 9)
+
+(draw-box nil :bg-blue)
+(draw-box "Docker" {:span 3 :fill "orange"})
+(draw-box "Docker" {:span 5 :fill "pink"})
+(draw-box "Docker" [:bg-green {:span 5}])
+(draw-box "Docker" [:bg-blue :4])
+(draw-box (text "Sync" :vertical))
+(draw-box "some text" [:bg-blue :4])
+(append-svg (svg/circle 300 55 50))
+----
+
+
+== Issues / Challenges
+
+WARNING: Docarized app doesn work on localhost, use <<Docker IP>> `http://172.17.0.2:8080`
+
+CAUTION: Have issues running with `docker-compose`
+emoji:white_check_mark[] better use `Makefile` with `docker` commands
+
+.Setting up aws named profile on images
+* Seems like setting up environment variables alone do not work
+* Had to create create credential file to work
+
+Unable to access the b2c webapp running inside docker container on localmachine
+
+`docker inspect` and `docker ps` shows port 8080is exposed still... doesnt work
+
+.Tries all these URLs
+* http://0.0.0.0:8080/
+* http://127.0.0.1:8080/
+* http://localhost:8080/
+* http://172.17.0.2:8080/
+
+
+=== Docker IP
+
+`docker inspect --format "{{.NetworkSettings.IPAddress }}" 2ae459506f96`
+
+ERROR: `curl 172.17.0.4:8080` fails
+
+1. run a sample react app in container emoji:white_check_mark[]
+2. `docker run -p 80:80 nginx` seems to work fine emoji:white_check_mark[]
+3. docker run -p 8000:8000 -it python:3.7-slim python3 -m http.server --bind 0.0.0.0 emoji:white_check_mark[]
+
+=== Open docker bugs/issues
+
+* https://github.com/docker/for-win/issues/3214
+
+
+How I tested it?::
+    Run `docker-compose` and normal `docker` commands on `bash` using `Makefile`
+    Then, watch the output of `docker ps`
+
+== Observations
+
+* Currently seems to be working with
+
+== ToDos
+
+* Add and install yarn dependencies in container before run
+
+== Docker Image
+

@@ -17,6 +17,7 @@
     "localization",
     "release",
     "vscode",
-    "bash"
+    "bash",
+    "adoc"
   ]
 }
