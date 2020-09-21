@@ -18,6 +18,7 @@
     "release",
     "vscode",
     "bash",
-    "adoc"
+    "adoc",
+    "ghactions"
   ]
 }
