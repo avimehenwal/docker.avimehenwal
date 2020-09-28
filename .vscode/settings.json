@@ -19,6 +19,7 @@
     "vscode",
     "bash",
     "adoc",
-    "ghactions"
+    "ghactions",
+    "make"
   ]
 }

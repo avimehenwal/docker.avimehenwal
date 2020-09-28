@@ -3,3 +3,4 @@ node_modules
 book/public
 dist/
 book/.bundle
+.secrets
